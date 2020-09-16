@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 4.209em;
+  font-weight: bold 700;
+}
+h2 {
+  font-size: 3.157em;
+  font-weight: bold 700;
+}
+h3 {
+  font-size: 2.369em;
+  font-weight: bold 700;
+}
+h4 {
+  font-size: 1.777em;
+  font-weight: bold 700;
+}
+h5 {
+  font-size: 1.333em;
+  font-weight: bold 700;
+}
+p {
+  font-size: 1.33em;
+  font-weight: regular 300;
+}
+.welcome {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #f8f8f8;
+  padding: 0;
+  line-height: 1em;
+  border-bottom: solid 3px #db562a;
+  width: fit-content;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+
+  color: #373737;
+
+  border-bottom: solid 3px #db562a;
+}
+.subtitle {
+  color: #646464;
+  font-weight: 300;
+}
+.work-title {
+  display: inline-block;
+  width: fit-content;
+  color: #f8f8f8;
+}
+.work-opacity:hover > .work-title:after {
+  transform: scaleX(1);
+}
+.work-title:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px#EE7528;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.see-more {
+  font-weight: 100;
+}
+.see-more:hover {
+  text-decoration: none;
+}
+.video-link-title {
+  color: #646464;
+  font-size: 0.9em;
+  width: 180px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  margin: 0;
+  resize: horizontal;
+}
+.video-link-views {
+  color: #646464;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.video-link-channel {
+  color: #646464;
+  font-size: 0.9em;
+  font-weight: 300;
+}

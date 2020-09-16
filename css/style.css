@@ -1,0 +1,163 @@
+.logo {
+  font-family: displayRegular;
+  color: #f8f8f8;
+  font-weight: 400;
+}
+.red {
+  color: #db562a;
+}
+.callToAction {
+  border: none;
+  background: rgba(219, 86, 42, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(219, 86, 42, 1) 15%,
+    rgba(219, 86, 42, 1) 32%,
+    rgba(219, 86, 42, 1) 41%,
+    rgba(238, 117, 40, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(219, 86, 42, 1) 15%,
+    rgba(219, 86, 42, 1) 32%,
+    rgba(219, 86, 42, 1) 41%,
+    rgba(238, 117, 40, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(219, 86, 42, 1) 15%,
+    rgba(219, 86, 42, 1) 32%,
+    rgba(219, 86, 42, 1) 41%,
+    rgba(238, 117, 40, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(219, 86, 42, 1) 15%,
+    rgba(219, 86, 42, 1) 32%,
+    rgba(219, 86, 42, 1) 41%,
+    rgba(238, 117, 40, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(219, 86, 42, 1) 15%,
+    rgba(219, 86, 42, 1) 32%,
+    rgba(219, 86, 42, 1) 41%,
+    rgba(238, 117, 40, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db562a', endColorstr='#ee7528', GradientType=1 );
+  border-radius: 30px;
+  padding: 15px 25px;
+  width: fit-content;
+  color: #f8f8f8;
+}
+
+.fixed {
+  background-image: url("../img/IM000804.JPG");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.list-group-item {
+  border-bottom: solid 2px rgba(255, 166, 0, 0);
+}
+.list-group-item:hover {
+  border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+.mega-menu {
+  width: 99vw;
+  left: calc((100vw - 100%) * -1 / 2);
+}
+.navbar {
+  background: #2c3e5000;
+}
+.navbar-nav li a {
+  color: #eee;
+}
+.newBackground {
+  background-color: #4e5d6c;
+}
+.opacity {
+  background-color: rgba(0, 0, 0, 0.493);
+  height: 100vh;
+}
+.work-opacity {
+  width: 100%;
+  height: 100%;
+  transition: all 250ms;
+}
+.work-opacity:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+.see-more {
+  color: #ee742800;
+  transform: translateY(50px);
+  transition: all 250ms;
+  visibility: hidden;
+}
+.work-opacity:hover > .see-more {
+  transform: translateY(0);
+  color: #ee7528;
+
+  visibility: visible;
+}
+.work-section {
+  background-color: #f8f8f8;
+}
+.work-box {
+  width: 28vw;
+  background-image: url("../img/IM000804.JPG");
+}
+.news-section {
+  background-color: #f0f0f0;
+}
+.video-list {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+.video-link {
+  width: 100%;
+  border-left: solid 2px #ee742800;
+  border-right: solid 2px #ee742800;
+}
+.video-link:hover {
+  border-color: #ee7528;
+}
+.video-link-img {
+  width: 40%;
+}
+.info-box {
+  color: white;
+  background-color: #ee7528;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+  height: 250px;
+  transform: translateY(50px);
+}
+.form-box {
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border: 0px solid #000000;
+  background-color: white;
+  -webkit-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
+}
+.info-field {
+  padding: 10px 5px;
+  border-bottom: solid 1px white;
+}
+.input-field {
+  background-color: #e3e3e3;
+  color: #909090;
+  border-radius: 20px;
+  padding: 5px 5px;
+  border: none;
+}
