@@ -18,12 +18,13 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://kit.fontawesome.com/43437046ca.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 </head>
 
 <body>
   <header class="container-fluid fixed p-0">
     <div class="opacity">
-      <nav class="sticky-top navbar-light shadow navbar navbar-expand-lg d-flex justify-content-center py-0">
+      <nav id="nav" class="sticky-top navbar-light shadow navbar navbar-expand-lg d-flex justify-content-center py-0">
         <div class="col-11 p-0 d-flex justify-content-between align-items-center">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,7 +155,7 @@
     </div>
   </section>
   <section class="work-section container-fluid d-flex justify-content-center mb-4 py-5">
-    <div class="col-11 text-center mt-4">
+    <div class=" col-6 text-center mt-4">
       <h2 class="title d-inline">Contact</h2>
       <p class="subtitle my-3">FOR MORE INFORMATION</p>
       <div class="row justify-content-center">
@@ -170,7 +171,7 @@
           </div>
         </div>
 
-        <form novalidate id="form" class="form-box col-6 p-4">
+        <form novalidate id="form" class=" form-box col-10 offset-2 p-4">
           <div class="d-flex flex-column offset-2">
             <h1 id="error"></h1>
             <input type="text" id="fname" name="firstname" class="input-field mb-3 mt-1" placeholder="Name" required />
@@ -180,9 +181,9 @@
             <textarea id="subject" name="subject" class="input-field my-3" placeholder="Your message"
               required></textarea>
 
-            <button id="submit" class="callToAction mt-3 mb-1">See more</button>
+            <button id="submit" class="callToAction mt-3 mb-1">Contact me</button>
         </form>
-      </div>
+    </div>
     </div>
     </div>
     </div>
@@ -196,6 +197,7 @@
   <script src="js/navbar.js"></script>
   <script src="js/youtube.js"></script>
   <script src="js/email_send.js"></script>
+
 </body>
 
 </html>
