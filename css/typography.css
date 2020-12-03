@@ -1,53 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;500&display=swap");
 * {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 10px;
 }
+@media (min-width: 576px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  * {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  * {
+    font-size: 18px;
+  }
+}
+
 h1 {
-  font-size: 4.209em;
+  font-size: 4.209rem;
   font-weight: bold 700;
 }
 h2 {
-  font-size: 3.157em;
+  font-size: 3.157rem;
   font-weight: bold 700;
 }
 h3 {
-  font-size: 2.369em;
+  font-size: 2.369rem;
   font-weight: bold 700;
 }
 h4 {
-  font-size: 1.777em;
+  font-size: 1.777rem;
   font-weight: bold 700;
 }
 h5 {
-  font-size: 1.333em;
+  font-size: 1.333rem;
   font-weight: bold 700;
 }
 p {
-  font-size: 1.33em;
-  font-weight: regular 300;
+  font-size: 1.33rem;
+  font-weight: 100;
 }
 .welcome {
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #f8f8f8;
   padding: 0;
   line-height: 1em;
-  border-bottom: solid 3px #db562a;
   width: fit-content;
 }
 
 .title {
   font-family: "Playfair Display", serif;
-  font-weight: 400;
-
+  font-weight: 700;
   color: #373737;
-
-  border-bottom: solid 3px #db562a;
+  width: fit-content;
+  border-bottom: 1px solid #ee7528;
 }
+.title_noborder {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #373737;
+  width: fit-content;
+}
+
 .subtitle {
   color: #646464;
   font-weight: 300;
+}
+.white {
+  color: #f8f8f8;
 }
 .work-title {
   display: inline-block;
@@ -101,15 +133,11 @@ p {
 
 .marquee span {
   display: inline-block;
-
 }
-
 
 .video-link:hover .marquee span {
-    animation: marquee 6s linear infinite;
-
+  animation: marquee 6s linear infinite;
 }
-
 
 @keyframes marquee {
   0% {

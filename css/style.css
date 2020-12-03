@@ -1,15 +1,29 @@
-*:focus { outline: 0; }
-::-moz-selection { background: #ee7528;
-color: white; }
-::selection { background: #ee7528;
-color: white; }
+body {
+  background-color: #373737;
+}
+::-moz-selection {
+  background: #ee7528;
+  color: white;
+}
+::selection {
+  background: #ee7528;
+  color: white;
+}
 .logo {
   font-family: displayRegular;
   color: #f8f8f8;
   font-weight: 400;
+  text-decoration: none;
+  display: inline;
+}
+.logo:hover {
+  text-decoration: none;
 }
 .red {
   color: #db562a;
+}
+.fab {
+  color: #f8f8f8;
 }
 .callToAction {
   border: none;
@@ -55,15 +69,15 @@ color: white; }
   width: fit-content;
   color: #f8f8f8;
 }
-.callToAction:hover{
-  -webkit-box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
-  -moz-box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
-  box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
+.callToAction:hover {
+  -webkit-box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
+  -moz-box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
+  box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
 }
 .fixed {
   background-image: url("../img/IM000804.JPG");
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,23 +87,41 @@ color: white; }
 .list-group-item:hover {
   border-bottom: solid 2px rgb(255, 255, 255);
 }
-
+.navbar {
+  background-color: #373737;
+}
 .mega-menu {
+  background-color: #373737;
+  margin-top: 0;
+  border: 0;
   width: 99vw;
   left: calc((100vw - 100%) * -1 / 2);
+  z-index: 1000;
 }
-.navbar {
-  background: #2c3e5000;
+.dropdown-menu {
+  animation: open 0.2s;
 }
+@keyframes open {
+  0% {
+    opacity: 0%;
+    top: 0px;
+  }
+  30% {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+    top: 100%;
+  }
+}
+
 .navbar-nav li a {
   color: #eee;
 }
-.newBackground {
-  background-color: #4e5d6c;
-}
+
 .opacity {
-  background-color: rgba(0, 0, 0, 0.493);
-  height: 100vh;
+  background-color: #181616d2;
+  height: 100%;
 }
 .work-opacity {
   width: 100%;
@@ -121,6 +153,9 @@ color: white; }
 .news-section {
   background-color: #f0f0f0;
 }
+#video {
+  min-height: 300px;
+}
 .video-list {
   background-color: #f8f8f8;
   border-radius: 20px;
@@ -137,17 +172,19 @@ color: white; }
   width: 40%;
 }
 .info-box {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  transform: translateY(35px);
+  padding-bottom: 4%;
   color: white;
   background-color: #ee7528;
   border-radius: 35px 35px 35px 35px;
   -moz-border-radius: 35px 35px 35px 35px;
   -webkit-border-radius: 35px 35px 35px 35px;
-  border: 0px solid #000000;
   -webkit-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
-  height: 250px;
-  transform: translateY(50px);
 }
 .form-box {
   border-radius: 35px 35px 35px 35px;
@@ -159,24 +196,43 @@ color: white; }
   -moz-box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
 }
-.info-field {
-  padding: 10px 5px;
-  border-bottom: solid 1px white;
-}
+
 .input-field {
   background-color: #e3e3e3;
   color: #909090;
-  border-radius: 20px;
+  border-radius: 9px;
   padding: 5px 5px;
-  border: 1px solid  #ee742800;
+  border: 1px solid #ee742800;
 }
-.red-border{
-  border: 1px solid  #ee7528;
+#subject {
+  height: 200px;
+}
+.input-field::placeholder {
+  padding: 10px;
+}
+.red-border {
+  border: 1px solid #ee7528;
   color: #ee7528;
-
 }
-.red-shadow{
-  -webkit-box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
-  -moz-box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
-  box-shadow: 3px 2px 13px 2px rgba(233,122,107,0.69);
+.red-shadow {
+  -webkit-box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
+  -moz-box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
+  box-shadow: 3px 2px 13px 2px rgba(233, 122, 107, 0.69);
+}
+
+.title-cont {
+  border-left: solid 1px #db562a;
+}
+.reverse {
+  color: #373737;
+}
+.list-group-item.reverse:hover {
+  border-bottom: solid 2px #db562a;
+}
+
+.footer-section {
+  border-top: solid 1px #f2f2f2;
+}
+.dropdown a:hover {
+  cursor: pointer;
 }
