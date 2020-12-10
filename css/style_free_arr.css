@@ -1,6 +1,7 @@
 body {
   background-color: #373737;
 }
+
 .form-box {
   border-radius: 35px 35px 0 0;
   -moz-border-radius: 35px 35px 0 0;
@@ -36,10 +37,7 @@ body {
   text-decoration: none;
   color: #f2f2f2f2;
 }
-.link-arrangement:hover {
-  text-decoration: none;
-  color: #db562a;
-}
+
 .mega-menu {
   background-color: #f2f2f2f2;
 }
@@ -51,7 +49,7 @@ body {
 }
 .guitar {
   background: url("../img/chitarra.svg") center no-repeat;
-  background-size: 250px;
+  background-size: 30vw;
 
   background-color: #f2f2f2;
   background-position-x: 30%;
@@ -60,20 +58,35 @@ body {
 .guitar .link-arrangement {
   color: #373737;
 }
-.macchie_dx,
-.mandolino {
+.link-arrangement:hover {
+  text-decoration: none;
+  color: #db562a;
+}
+.macchie_dx {
   max-width: 20vw;
   position: absolute;
 }
+.guitar_svg {
+  width: 20vw;
+}
+.mandolino {
+  position: absolute;
+  width: 25vw;
+  z-index: -2;
+
+  right: 25vw;
+}
 .macchie_dx {
+  z-index: -2;
   top: 0;
   right: 0;
 }
 .macchie_sx {
   position: absolute;
-  width: 80vw;
+  width: 40vw;
   z-index: -2;
   left: 0;
+  bottom: -20vw;
 }
 .black-border {
   border-color: #373737;
@@ -82,21 +95,46 @@ body {
 .fab {
   color: #db562a;
 }
-@media (max-width: 576px) {
+.reverse {
+  color: #f2f2f2;
+}
+.black {
+  color: #373737;
+}
+@media (min-width: 0px) {
   .macchie_sx {
-    width: 150vw;
-    top: 30vw;
+    position: absolute;
+    bottom: 48vw;
+    width: 100vw;
+  }
+}
+@media (min-width: 320px) {
+  .macchie_sx {
+    position: absolute;
+    bottom: 48vw;
+    width: 80vw;
+  }
+}
+@media (min-width: 510px) {
+  .macchie_sx {
+    width: 70vw;
+    bottom: -10vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .macchie_sx {
+    width: 60vw;
+    bottom: -10vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .macchie_sx {
+    width: 40vw;
     bottom: -15vw;
   }
-}
-
-@media (max-width: 992px) {
-  .macchie_sx {
-    bottom: -25vw;
+  .guitar {
+    background-image: none;
   }
 }

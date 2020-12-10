@@ -48,13 +48,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="logo" href="index.html"><h3 class="logo ">Chitarr</h3>
+        <a class="logo" href="index.html"><h3 class="logo reverse">Chitarr</h3>
         <h3 class="logo red">Arte</h3>
-        <h3 class="logo ">.it</h3></a>
+        <h3 class="logo reverse">.it</h3></a>
         <ul
           class="list-group collapse navbar-collapse flex-row justify-content-end"
         >
-          <li class="px-0 list-group-item  reverse  reverse reverse dropdown position-static active_page">
+          <li class="px-0 list-group-item  reverse dropdown position-static active_page">
             <a
               class="nav-link dropdown-toggle"
               id="navbarDropdown"
@@ -94,7 +94,7 @@
               >
             </div>
           </li>
-          <li class="px-0 list-group-item  reverse  reverse dropdown position-static">
+          <li class="px-0 list-group-item  reverse   dropdown position-static">
             <a
               class="nav-link dropdown-toggle"
               id="navbarDropdown"
@@ -186,13 +186,16 @@
 
         </div>
       </div>
+      <img src="img/macchie_sx.svg" class="macchie_sx" width="30vw"/>
+
     </section>
-    <img src="img/macchie_sx.svg" class="macchie_sx" width="30vw"/>
 
-    <section class="form-box guitar guitar-font pt-5">
+    <section id="white-part" class="form-box guitar guitar-font pt-5">
 
-    <div class="container offset-md-6 col-md-6" >
+    <div class="container d-flex justify-content-center" >
+    <img src="img/chitarra.svg" class="guitar_svg d-none d-lg-flex" />
 
+  <div class="col-12 col-lg-8 bg-guitar">
         <div class="title-cont mb-5 px-3">
         <h2 class="title_noborder ">Free Arrangements</h1>
         <p class="subtitle">GUITAR</p>
@@ -211,7 +214,7 @@
       </div>
     </div>
       </div>
-
+    </div>
     <footer
         class="col-11 d-flex m-auto justify-content-between flex-column flex-md-row footer-section black-border py-3"
       >

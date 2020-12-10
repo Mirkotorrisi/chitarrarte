@@ -3,6 +3,7 @@ const submit = document.getElementById("submit");
 
 submit.onclick = (e) => {
   e.preventDefault();
+
   for (const iterator of e.srcElement.form) {
     if (!iterator.validity.valid) {
       switch (iterator.name) {

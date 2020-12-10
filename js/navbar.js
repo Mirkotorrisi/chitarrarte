@@ -24,3 +24,25 @@ const removeAllShow = () => {
     navList.children[i].children[1].classList.remove("show");
   }
 };
+let prevScrollpos = window.pageYOffset;
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.opacity = "1.0";
+  } else {
+    navbar.style.opacity = "0.0";
+  }
+  prevScrollpos = currentScrollPos;
+  if (
+    navbar.offsetTop + navbar.offsetHeight >
+    document.getElementById("white-part").offsetTop
+  ) {
+    for (const iterator of document.getElementsByClassName("reverse")) {
+      iterator.classList.add("black");
+    }
+  } else {
+    for (const iterator of document.getElementsByClassName("reverse")) {
+      iterator.classList.remove("black");
+    }
+  }
+};

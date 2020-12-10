@@ -87,6 +87,9 @@ body {
 .list-group-item:hover {
   border-bottom: solid 2px rgb(255, 255, 255);
 }
+#nav {
+  transition: ease-in 0.2s;
+}
 .navbar {
   background-color: #373737;
 }
@@ -117,6 +120,7 @@ body {
 
 .navbar-nav li a {
   color: #eee;
+  mix-blend-mode: difference;
 }
 
 .opacity {
@@ -223,9 +227,7 @@ body {
 .title-cont {
   border-left: solid 1px #db562a;
 }
-.reverse {
-  color: #373737;
-}
+
 .list-group-item.reverse:hover {
   border-bottom: solid 2px #db562a;
 }
