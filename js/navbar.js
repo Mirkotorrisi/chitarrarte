@@ -12,7 +12,6 @@ window.onclick = (e) => {
 for (const link of links) {
   link.onclick = () => {
     removeAllShow();
-    navbar.classList.add("newBackground");
     link.parentElement.classList.add("show");
     link.parentElement.children[1].classList.add("show");
   };
