@@ -27,9 +27,7 @@
   </head>
 
   <body>
-    <header class="container-fluid fixed p-0">
-      <div class="opacity">
-        <nav
+  <nav
           id="nav"
           class="sticky-top navbar-light shadow navbar navbar-expand-lg d-flex justify-content-center py-0"
         >
@@ -64,7 +62,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  ARRANGEMENTS
+                  Arrangements
                 </a>
                 <div
                   class="dropdown-menu mega-menu"
@@ -88,11 +86,6 @@
                     href="free_scores.html"
                     >Free Guitar Scores</a
                   >
-                  <a
-                    class="dropdown-item"
-                    href="http://www.chitarrarte.it/PARTITURE%20pdf/quattro_studi_facili.pdf"
-                    >"Quattro Studi Facili - 4 Easy Studies" (Free)</a
-                  >
                 </div>
               </li>
               <li class="px-0 list-group-item dropdown position-static">
@@ -104,7 +97,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  BIOGRAPHY
+                  Biography
                 </a>
                 <div
                   class="dropdown-menu mega-menu"
@@ -124,7 +117,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  WORK
+                  Work
                 </a>
                 <div
                   class="dropdown-menu mega-menu"
@@ -141,7 +134,7 @@
                     class="dropdown-item"
                     href="http://www.chitarrarte.it/PARTITURE%20pdf/quattro_studi_facili.pdf"
                     target="_blank"
-                    >"Quattro Studi Facili - 4 Easy Studies" (Free)</a
+                    >4 Easy Studies</a
                   >
                 </div>
               </li>
@@ -154,7 +147,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  CONTACT
+                  Contact
                 </a>
                 <div
                   class="dropdown-menu mega-menu"
@@ -178,10 +171,13 @@
             </ul>
           </div>
         </nav>
+    <header class="container-fluid fixed p-0">
+      <div class="opacity">
+        
         <div class="d-flex justify-content-center py-5">
-          <div class="col-10 d-flex flex-column justify-content-center">
+          <div class="col-10 d-flex flex-column justify-content-center mt-5">
             <div class="title-cont py-0 px-3 mb-4">
-              <h1 class="welcome">Guitar Free Scores</h1>
+              <h1 class="welcome">Free Guitar Scores</h1>
               <p class="col-6 p-0 mt-5 mb-0">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmo
@@ -195,9 +191,9 @@
       </div>
     </header>
     <section
-      class="work-section form-box container-fluid d-flex flex-column justify-content-center py-5"
+      class="work-section form-box container-fluid d-flex flex-column justify-content-center py-5 px-5"
     >
-      <div class="text-center mt-4">
+      <div class="text-center mt-4 work">
         <h2 class="title d-inline">Work</h2>
         <p class="subtitle mt-3">MY PERSONAL PRODUCTION</p>
         <div class="row justify-content-center mt-5">
@@ -232,7 +228,7 @@
         <h2 class="title d-inline">News</h2>
         <p class="subtitle my-3">SEE MY LATEST ARRANGEMENTS</p>
 
-        <div class="d-flex justify-content-between mt-5">
+        <div class="d-flex justify-content-around mt-5">
           <div id="video" class="col-12 col-lg-7 p-0"></div>
           <div class="col-4 video-list d-none d-lg-flex shadow px-0 py-4">
             <main></main>
@@ -252,7 +248,9 @@
         class="d-flex flex-column py-5 px-5 m-auto col-12 col-lg-8 justify-content-center"
       >
         <h2 class="title white mx-auto">Contact</h2>
-        <p class="white subtitle my-2 mx-auto">FOR MORE INFORMATION</p>
+        <p class="white subtitle my-2 mx-auto" style="color: #bcbcbc">
+          FOR MORE INFORMATION
+        </p>
         <h1 id="error" class="my-3"></h1>
         <input
           type="text"
@@ -282,9 +280,15 @@
         <div class="d-flex justify-content-between align-items-center">
           <button id="submit" class="callToAction mt-3 mb-1">Contact me</button>
           <div class="d-flex icons">
-            <i class="far fa-envelope m-2"></i
-            ><i class="fab fa-instagram m-2"></i
-            ><i class="fab fa-facebook-f m-2"></i>
+            <a href="mailto:info@guitarfreescores.com"
+              ><i class="far fa-envelope m-2"></i
+            ></a>
+            <a href="https://www.instagram.com/giuseppetorrisiguitar/"
+              ><i class="fab fa-instagram m-2"></i
+            ></a>
+            <a href="https://www.facebook.com/Guitarfreescores/"
+              ><i class="fab fa-facebook-f m-2"></i
+            ></a>
           </div>
         </div>
       </form>

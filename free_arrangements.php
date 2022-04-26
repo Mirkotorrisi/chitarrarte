@@ -31,7 +31,6 @@
 
   <body >
     <img src="img/macchie_dx.svg" class="macchie_dx"/>
-         <img src="img/mandolino.svg" class="mandolino"/>
     <nav
       id="nav"
       class="sticky-top navbar-light shadow navbar navbar-expand-lg d-flex justify-content-center py-0"
@@ -62,8 +61,8 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style="color:#db562a;"
-            >ARRANGEMENTS
+              style="color:#373737;"
+            >Arrangements
             </a>
             <div
               class="dropdown-menu mega-menu"
@@ -87,11 +86,6 @@
                 href="free_scores.html"
                 >Free Guitar Scores</a
               >
-              <a
-                class="dropdown-item"
-                href="http://www.chitarrarte.it/PARTITURE%20pdf/quattro_studi_facili.pdf"
-                >"Quattro Studi Facili - 4 Easy Studies" (Free)</a
-              >
             </div>
           </li>
           <li class="px-0 list-group-item  reverse   dropdown position-static">
@@ -103,7 +97,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              BIOGRAPHY
+              Biography
             </a>
             <div
               class="dropdown-menu mega-menu"
@@ -123,7 +117,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              WORK
+              Work
             </a>
             <div
               class="dropdown-menu mega-menu"
@@ -140,7 +134,7 @@
                 class="dropdown-item"
                 href="http://www.chitarrarte.it/PARTITURE%20pdf/quattro_studi_facili.pdf"
                 target="_blank"
-                >"Quattro Studi Facili - 4 Easy Studies" (Free)</a
+                >4 Easy Studies</a
               >
             </div>
           </li>
@@ -153,7 +147,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              CONTACT
+              Contact
             </a>
             <div
               class="dropdown-menu mega-menu"
@@ -175,45 +169,50 @@
       </div>
     </nav>
 
-    <section class="pb-5">
 
-    <div class="container py-5" id="mandolin_cont">
+    <div class="container py-5 " >
 
+
+<div class="row">
+        <div class="col-md-8" >
         <div class="title-cont mb-5 px-3">
-        <h2 class="mandolin-font title_noborder ">Free Arrangements</h1>
-        <p class="subtitle">MANDOLIN</p>
-
-
+          <h2 class="mandolin-font title_noborder ">Free Arrangements</h2>
+          <p class="subtitle">MANDOLIN</p>
         </div>
-      </div>
-      <img src="img/macchie_sx.svg" class="macchie_sx" width="30vw"/>
+      <div class="link-cont" id="mandolin_cont"></div>    </div>
 
-    </section>
+        <img src="img/mandolino.svg" class="mandolino col-4 d-none d-md-inline"/>
+        </div>
+    </div>
+    <img src="img/macchie_sx.svg" class="macchie_sx" width="30vw"/>
 
     <section id="white-part" class="form-box guitar guitar-font pt-5">
 
-    <div class="container d-flex justify-content-center" >
-    <img src="img/chitarra.svg" class="guitar_svg d-none d-lg-flex" />
+<div class="container d-flex justify-content-center" >
+  <img src="img/chitarra.svg" class="guitar_svg d-none col-4 d-lg-flex py-5" />
 
-  <div class="col-12 col-lg-8 bg-guitar">
-        <div class="title-cont mb-5 px-3">
-        <h2 class="title_noborder ">Free Arrangements</h1>
-        <p class="subtitle">GUITAR</p>
+  <div class="col-12 col-lg-7 m-auto bg-guitar ">
+    <div class="title-cont mb-5 px-3">
+      <h2 class="title_noborder ">Free Arrangements</h1>
+      <p class="subtitle">GUITAR</p>
+    </div>
+        <div class="link-cont" id="guitar_cont">
+
         </div>
-        <div class="container" id="guitar_cont"></div>
 
-        <div class="container mx-auto my-5">
+    <div class="container mx-auto my-5">
       <div class="d-flex flex-column justify-content-center">
         <h3 class="title_noborder m-auto">
         FIND ALL
-        </h3><h3 class="title_noborder m-auto">THE ARRANGEMENTS</h3>
+        </h3>
+        <h3 class="title_noborder m-auto">THE ARRANGEMENTS</h3>
         <a href="all_the_arrangements.php" id="buttonx" class="callToAction mx-auto my-3">
               See more
             </a>
-            <p class="subtitle m-auto">or <a style="border-bottom:1px solid #ee7528;font-size:1.33rem;"class="subtitle link-arrangement" href="#contact">contact me</a> for more informations</p>
+        <p class="subtitle m-auto">or <a style="border-bottom:1px solid #ee7528;font-size:1.33rem;"class="subtitle link-arrangement" href="#contact">contact me</a> for more informations</p>
       </div>
     </div>
-      </div>
+  </div>
     </div>
     <footer
         class="col-11 d-flex m-auto justify-content-between flex-column flex-md-row footer-section black-border py-3"
@@ -253,27 +252,27 @@
     <script>
       const appendArr = (idCont, files)=>{
         let cont = document.getElementById(idCont)
-        let link_cont = document.createElement("DIV")
-          link_cont.classList.add("link-cont")
         files.map((file) =>{
-
           let link = document.createElement("A")
           link.classList.add("link-arrangement")
           link.setAttribute("href",file)
           link.innerText = file.substr(4,file.length -8);
-          link_cont.appendChild(link)
-          cont.appendChild(link_cont)
+          cont.appendChild(link)
           } )
         }
       var mandolin_files = <?php $out = array();
 foreach (glob('pdf/mandolin_pdf/*.pdf') as $filename) {
-    $out[] = str_replace('mandolin_pdf/', '', $filename);
+    $toDel = ['mandolin_pdf/', "_"];
+    $toGet = ['', " "];
+    $out[] = str_replace($toDel, $toGet, $filename);
 }
 echo json_encode($out);
 ?>;
       var guitar_files = <?php $out = array();
 foreach (glob('pdf/guitar_pdf/*.pdf') as $filename) {
-    $out[] = str_replace('guitar_pdf/', '', $filename);
+    $toDel = ['guitar_pdf/', "_"];
+    $toGet = ['', " "];
+    $out[] = str_replace($toDel, $toGet, $filename);
 }
 echo json_encode($out);
 ?>;

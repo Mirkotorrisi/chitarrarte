@@ -1,7 +1,9 @@
 body {
   background-color: #373737;
 }
-
+.subtitle {
+  color: #bcbcbc;
+}
 .form-box {
   border-radius: 35px 35px 0 0;
   -moz-border-radius: 35px 35px 0 0;
@@ -12,7 +14,10 @@ body {
   box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.75);
 }
 .navbar {
-  background-color: #f2f2f200;
+  background-color: #f8f8f8;
+}
+.nav-link:hover {
+  color: #373737;
 }
 .mandolin-font {
   color: #f2f2f2f2;
@@ -28,9 +33,10 @@ body {
 }
 .link-cont {
   height: auto;
+  width: auto;
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 0.8rem;
+  grid-template-columns: repeat(2, 2fr);
   padding-bottom: 5px;
 }
 .link-arrangement {
@@ -48,34 +54,29 @@ body {
   color: #db562a;
 }
 .guitar {
-  background: url("../img/chitarra.svg") center no-repeat;
   background-size: 30vw;
 
   background-color: #f2f2f2;
   background-position-x: 30%;
 }
-
+.guitar_svg {
+  max-width: 20vw;
+  margin: auto;
+}
 .guitar .link-arrangement {
   color: #373737;
 }
 .link-arrangement:hover {
   text-decoration: none;
   color: #db562a;
+  transform: translateX(5px);
+  transition: ease-in 0.2s;
 }
 .macchie_dx {
   max-width: 20vw;
   position: absolute;
 }
-.guitar_svg {
-  width: 20vw;
-}
-.mandolino {
-  position: absolute;
-  width: 25vw;
-  z-index: -2;
 
-  right: 25vw;
-}
 .macchie_dx {
   z-index: -2;
   top: 0;
@@ -86,7 +87,7 @@ body {
   width: 40vw;
   z-index: -2;
   left: 0;
-  bottom: -20vw;
+  bottom: 0;
 }
 .black-border {
   border-color: #373737;
@@ -104,28 +105,28 @@ body {
 @media (min-width: 0px) {
   .macchie_sx {
     position: absolute;
-    bottom: 48vw;
+    bottom: 25vw;
     width: 100vw;
   }
 }
 @media (min-width: 320px) {
   .macchie_sx {
     position: absolute;
-    bottom: 48vw;
+    bottom: 30vw;
     width: 80vw;
   }
 }
 @media (min-width: 510px) {
   .macchie_sx {
-    width: 70vw;
-    bottom: -10vw;
+    width: 50vw;
+    bottom: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 692px) {
   .macchie_sx {
     width: 60vw;
-    bottom: -10vw;
+    bottom: -25vw;
   }
 }
 
@@ -133,6 +134,15 @@ body {
   .macchie_sx {
     width: 40vw;
     bottom: -15vw;
+  }
+  .guitar {
+    background-image: none;
+  }
+}
+@media (min-width: 992px) {
+  .macchie_sx {
+    width: 40vw;
+    bottom: -20vw;
   }
   .guitar {
     background-image: none;

@@ -39,7 +39,6 @@ $(document).ready(function () {
           key: key,
         },
         function (data) {
-
           $.each(data.items, function (i, item) {
             var views = item.statistics.viewCount;
             $("main").append(`

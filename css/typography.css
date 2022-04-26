@@ -17,13 +17,13 @@
 
 @media (min-width: 992px) {
   * {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
   * {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -50,6 +50,12 @@ h5 {
 p {
   font-size: 1.33rem;
   font-weight: 100;
+}
+.mega-menu a,
+.nav-link {
+  font-size: 1em;
+  font-weight: 400;
+  color: #909090;
 }
 .welcome {
   font-family: "Playfair Display", serif;
@@ -79,7 +85,7 @@ p {
   font-weight: 300;
 }
 .white {
-  color: #f8f8f8;
+  color: #f2f2f2;
 }
 .work-title {
   display: inline-block;
@@ -92,7 +98,7 @@ p {
 .work-title:after {
   display: block;
   content: "";
-  border-bottom: solid 1px#EE7528;
+  border-bottom: solid 1px #ee7528;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }

@@ -9,6 +9,9 @@ body {
   background: #ee7528;
   color: white;
 }
+.work {
+  height: 100vh;
+}
 .logo {
   font-family: displayRegular;
   color: #f8f8f8;
@@ -22,9 +25,7 @@ body {
 .red {
   color: #db562a;
 }
-.fab {
-  color: #f8f8f8;
-}
+
 .callToAction {
   border: none;
   background: rgba(219, 86, 42, 1);
@@ -77,29 +78,37 @@ body {
 .fixed {
   background-image: url("../img/IM000804.JPG");
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.list-group-item {
-  border-bottom: solid 2px rgba(255, 166, 0, 0);
-}
-.list-group-item:hover {
-  border-bottom: solid 2px rgb(255, 255, 255);
-}
+
 #nav {
   transition: ease-in 0.2s;
 }
 .navbar {
-  background-color: #373737;
+  background-color: #37373700;
+}
+.nav-link:hover {
+  color: #f8f8f8;
 }
 .mega-menu {
   background-color: #373737;
   margin-top: 0;
   border: 0;
-  width: 99vw;
-  left: calc((100vw - 100%) * -1 / 2);
   z-index: 1000;
+}
+.mega-menu:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 17px;
+  border-color: transparent transparent #464646 transparent;
+  z-index: 9998;
 }
 .dropdown-menu {
   animation: open 0.2s;
@@ -160,7 +169,7 @@ body {
   min-height: 300px;
 }
 .video-list {
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
   border-radius: 20px;
 }
 .video-link {
@@ -170,6 +179,7 @@ body {
 }
 .video-link:hover {
   border-color: #ee7528;
+  cursor: pointer;
 }
 .video-link-img {
   width: 40%;
@@ -227,13 +237,20 @@ body {
   border-left: solid 1px #db562a;
 }
 
-.list-group-item.reverse:hover {
-  border-bottom: solid 2px #db562a;
-}
-
 .footer-section {
   border-top: solid 1px #f2f2f2;
 }
 .dropdown a:hover {
   cursor: pointer;
+}
+a {
+  color: #ee7528;
+}
+.fab,
+.far {
+  color: #f2f2f2;
+}
+.fab:hover,
+.far:hover {
+  color: #ee7528;
 }
